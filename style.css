@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 12px;
+    width: 65%;
+    max-height: 3005vh;      
+    overflow-y: auto;
+    padding-inline: 1.5rem;
+    line-height: 2;
+    background-color: white;
+}
+.container{
+  font-family: "Roboto", sans-serif;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.input-field{
+  height: 30px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: rgba(245, 245, 245, 0.963);
+  border-radius: 6px;
+  width: 95%;
+}
+.input-field::placeholder{
+  padding-inline: 1.1rem;
+}
+
+.date-wrapper {
+  position: relative;
+}
+
+.date-wrapper i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+.date-wrapper input {
+  padding-left: 35px; /* so text doesn’t overlap the icon */
+  border-radius: 6px;
+  width: 95%;
+  height: 30px;
+  border: none;
+  background-color: rgba(245, 245, 245, 0.963);
+}
+
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bookings-list{
+  margin-top: 20px;
+  border-radius: 6px;
+  width: 95%;
+  height: 40px;
+  border: none;
+  background-color: rgba(14, 14, 218, 0.888);
+  cursor: pointer;
+}
+
+.bookings{
+  padding-inline: 2rem;
+}
+
+
+.bookings li{
+  list-style: none;
+}

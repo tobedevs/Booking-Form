@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="https://formsubmit.co/tobeadigwe3000@gmail.com" method="POST">
+           <h1>Book an Appointment</h1>
+           <div class="inputs">
+              <input type="text" class="input-field" id="name-input" placeholder="Your Name">
+              <input type="text" class="input-field" id="email-input" placeholder="Your Email">
+           </div>
+           <select name="services" id="service-input" class="input-field">
+               <option value="">Choose a service</option>
+               <option value="Code Review">✅ Code Review</option>
+               <option value="JavaScript Help">💡 JavaScript Help</option>
+               <option value="Frontend Debug Session">🌐 Frontend Debug Session</option>
+               <option value="Project Advice">🛠 Project Advice</option>
+               <option value="Portfolio Review">📁 Portfolio Review</option>
+            </select>
+            <div class="date-wrapper">
+               <i class="fa-solid fa-calendar"></i>
+               <input type="datetime-local" min="2025-06-18T08:00" id="date-input"/>
+            </div>
+            <button type="button" id="bookings-list">Book Now</button>
+            <div class="bookings">
+                <h2>Upcoming Bookings:</h2>
+                <ul class="bookings-list"></ul>
+            </div>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
