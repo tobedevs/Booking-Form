@@ -12,6 +12,9 @@ body{
     align-items: center;
     height: 100vh;
 }
+h1{
+  font-size: large;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -83,7 +86,9 @@ button{
 .bookings{
   padding-inline: 2rem;
 }
-
+h2{
+  font-size: medium;
+}
 
 .bookings li{
   list-style: none;
